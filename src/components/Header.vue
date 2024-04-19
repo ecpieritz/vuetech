@@ -1,0 +1,103 @@
+<template>
+  <header class="vt-header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="@/assets/imgs/vt-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="@/assets/imgs/icons/vt-icon__menu.png" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services <span class="border-btm"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Choose Us <span class="border-btm"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials <span class="border-btm"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prices <span class="border-btm"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact <span class="border-btm"></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+
+</template>
+
+<script>
+export default {
+  name: 'HeaderVueTech',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<style scoped lang="scss">
+$vt-bg: #2C2E33;
+$vt-black: #000000;
+$vt-blue: #213E7A;
+$vt-blue-dark: #122853;
+$vt-grey: #cccbcb;
+$vt-yellow: #FFA800;
+$vt-yellow-dark: #d68f00;
+$vt-white: #ffffff;
+
+.vt-header{
+  padding: 20px 0;
+  font-size: 20px;
+
+  .navbar-brand {
+    margin-right: 10vw;
+    img{
+      height: 60px;
+    }
+  }
+
+  .navbar-toggler{
+    img{
+      width: 40px;
+    }
+  }
+
+  .collapse {
+    &.navbar-collapse {
+      .navbar-nav {
+        gap: 40px;
+        .nav-link {
+          color: $vt-white;
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          
+          .border-btm{
+            height: 3px;
+            background-color: none;
+            width: 50%;
+            margin: auto;
+          }
+          
+          &:hover{
+            .border-btm {
+              background-color: $vt-yellow;
+            }
+          }
+        }
+        @media(max-width: 680px) {
+          gap: 0;
+        }
+      }
+
+    }
+  }
+}
+</style>
