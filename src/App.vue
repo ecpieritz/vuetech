@@ -2,18 +2,21 @@
   <main>
     <Header />
     <Banner />
+    <Companies />
   </main>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Banner from "./components/Banner.vue";
+import Companies from "./components/Companies.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Banner,
+    Companies
   },
 };
 </script>
