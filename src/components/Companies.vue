@@ -69,5 +69,36 @@ $vt-white: #ffffff;
     }
   }
   
+  @media (max-width: 1024px) {
+    .row{
+      .col{
+        img{
+          width: 60px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 780px) {
+    padding: 40px 0;
+    
+    .row{
+      justify-content: center;
+      margin: auto;
+      .col{
+        min-width: 20% !important;
+        max-width: 20% !important;
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    .row{
+      .col{
+        min-width: 30% !important;
+        max-width: 30% !important;
+      }
+    }
+  }
 }
 </style>
