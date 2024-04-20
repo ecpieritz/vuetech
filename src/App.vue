@@ -53,6 +53,10 @@ body {
   max-width: 1360px;
 
   padding: 0;
+
+  @media(max-width: 1024px) {
+    padding: 0 20px;
+  }
 }
 // ----------
 // End Default
@@ -95,6 +99,21 @@ button {
   font-size: 16px;
   line-height: 1;
   font-weight: 700;
+}
+
+@media(max-width: 780px) {
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 36px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 22px;
+  }
 }
 // ----------
 // End Texts
@@ -155,6 +174,14 @@ button {
       color: $vt-blue;
       text-decoration: none;
     }
+  }
+
+  @media(max-width: 780px) {
+    padding: 20px 40px;
+  }
+
+  @media(max-width: 460px) {
+    padding: 20px;
   }
 }
 // ----------
