@@ -44,6 +44,7 @@ export default {
 
 <style scoped lang="scss">
 $vt-bg: #2C2E33;
+$vt-bg-light: #474a52;
 $vt-black: #000000;
 $vt-blue: #213E7A;
 $vt-blue-dark: #122853;
@@ -53,8 +54,9 @@ $vt-yellow-dark: #d68f00;
 $vt-white: #ffffff;
 
 .vt-header{
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 20px;
+  border-bottom: 2px solid $vt-bg-light;
 
   .navbar-brand {
     margin-right: 10vw;
