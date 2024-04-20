@@ -3,6 +3,7 @@
     <Header />
     <Banner />
     <Companies />
+    <Services />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Header from "./components/Header.vue";
 import Banner from "./components/Banner.vue";
 import Companies from "./components/Companies.vue";
+import Services from "./components/Services.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Banner,
-    Companies
+    Companies,
+    Services
   },
 };
 </script>
