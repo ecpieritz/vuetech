@@ -4,32 +4,8 @@
       <h3 class="text-center mb-5">Trusted by thousand companies </h3>
 
       <div class="row">
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__pinterest.png" alt="pinterest">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__google.png" alt="google">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__neon.png" alt="neon">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__shopee.png" alt="shopee">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__unilever.png" alt="unilever">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__spotify.png" alt="spotify">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__trip.png" alt="trip adviser">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__grab.png" alt="grab">
-        </div>
-        <div class="col">
-          <img src="@/assets/imgs/vt-companies__airbnb.png" alt="airbnb">
+        <div v-for="(company, index) in companies" :key="index" class="col">
+          <img :src="company.image" :alt="company.alt">
         </div>
       </div>
     </div>
@@ -39,6 +15,21 @@
 <script>
 export default {
   name: "CompaniesrVueTech",
+  data() {
+    return {
+      companies: [
+        { image: require('@/assets/imgs/vt-companies__pinterest.png'), alt: 'Pinterest' },
+        { image: require('@/assets/imgs/vt-companies__google.png'), alt: 'Google' },
+        { image: require('@/assets/imgs/vt-companies__neon.png'), alt: 'Neon' },
+        { image: require('@/assets/imgs/vt-companies__shopee.png'), alt: 'Shopee' },
+        { image: require('@/assets/imgs/vt-companies__unilever.png'), alt: 'Unilever' },
+        { image: require('@/assets/imgs/vt-companies__spotify.png'), alt: 'Spotify' },
+        { image: require('@/assets/imgs/vt-companies__trip.png'), alt: 'Trip Adviser' },
+        { image: require('@/assets/imgs/vt-companies__grab.png'), alt: 'Grab' },
+        { image: require('@/assets/imgs/vt-companies__airbnb.png'), alt: 'Airbnb' }
+      ]
+    };
+  }
 };
 </script>
 
