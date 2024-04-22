@@ -113,6 +113,13 @@ $vt-white: #ffffff;
         font-size: 24px;
       }
 
+      @media (max-width: 960px) {
+        padding: 20px 0 0 10px;
+
+        h2,p{
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -140,11 +147,32 @@ $vt-white: #ffffff;
 
     }
 
+    @media (max-width: 960px) {
+      flex-direction: row;
+
+      .col-md-7{
+        padding: 20px 0 0 10px;
+        text-align: left;
+
+        h2,p{
+          width: 100%;
+          margin-left: o;
+        }
+
+        .vt-btn {
+          margin-left: 0;
+        }
+      }
+
+    }
   }
 
   img {
     width: 100%;
   }
 
+  @media (max-width: 1024px) {
+    padding: 60px 20px;
+  }
 }
 </style>
