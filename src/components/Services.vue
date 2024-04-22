@@ -7,34 +7,12 @@
       </p>
 
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-12">
+        <div v-for="(service, index) in services" :key="index" class="col-md-3 col-sm-6 col-12">
           <div class="vt-companies__card">
-            <img src="@/assets/imgs/icons/vt-icon__seo.png" alt="seo notebook" />
-            <p><strong>SEO Marketing</strong></p>
+            <img :src="service.icon" :alt="service.alt" />
+            <p><strong>{{ service.title }}</strong></p>
           </div>
         </div>
-
-        <div class="col-md-3 col-sm-6 col-12">
-          <div class="vt-companies__card">
-            <img src="@/assets/imgs/icons/vt-icon__research.png" alt="research topic graphs" />
-            <p><strong>Research Topic Trends</strong></p>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 col-12">
-          <div class="vt-companies__card">
-            <img src="@/assets/imgs/icons/vt-icon__email.png" alt="email" />
-            <p><strong>Email Marketing</strong></p>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 col-12">
-          <div class="vt-companies__card">
-            <img src="@/assets/imgs/icons/vt-icon__ppc.png" alt="money screen topics" />
-            <p><strong>Google PPC</strong></p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -43,6 +21,16 @@
 <script>
 export default {
   name: "ServicesVueTech",
+  data() {
+    return {
+      services: [
+        { icon: require('@/assets/imgs/icons/vt-icon__seo.png'), alt: 'SEO Marketing', title: 'SEO Marketing' },
+        { icon: require('@/assets/imgs/icons/vt-icon__research.png'), alt: 'Research Topic Trends', title: 'Research Topic Trends' },
+        { icon: require('@/assets/imgs/icons/vt-icon__email.png'), alt: 'Email Marketing', title: 'Email Marketing' },
+        { icon: require('@/assets/imgs/icons/vt-icon__ppc.png'), alt: 'Google PPC', title: 'Google PPC' }
+      ]
+    };
+  }
 };
 </script>
 
