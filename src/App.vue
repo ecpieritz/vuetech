@@ -4,6 +4,7 @@
     <Banner />
     <Companies />
     <Services />
+    <Choose />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header.vue";
 import Banner from "./components/Banner.vue";
 import Companies from "./components/Companies.vue";
 import Services from "./components/Services.vue";
+import Choose from "./components/Choose.vue";
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     Header,
     Banner,
     Companies,
-    Services
+    Services,
+    Choose
   },
 };
 </script>
@@ -160,6 +163,7 @@ button {
   text-transform: capitalize;
   padding: 20px 60px;
   border-radius: 16px;
+  width: fit-content;
   &.yellow{
     background-color: $vt-yellow;
     color: $vt-black;
