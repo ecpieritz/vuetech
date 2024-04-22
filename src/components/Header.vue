@@ -10,34 +10,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services <span class="border-btm"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Choose Us <span class="border-btm"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials <span class="border-btm"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Prices <span class="border-btm"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact <span class="border-btm"></span></a>
+            <li v-for="(item, index) in navItems" :key="index" class="nav-item">
+              <a class="nav-link" href="#">{{ item.label }} <span class="border-btm"></span></a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-</header>
-
+  </header>
 </template>
 
 <script>
 export default {
   name: 'HeaderVueTech',
-  props: {
-    msg: String
+  data() {
+    return {
+      navItems: [
+        { label: 'Services' },
+        { label: 'Choose Us' },
+        { label: 'Testimonials' },
+        { label: 'Prices' },
+        { label: 'Contact' }
+      ]
+    }
   }
 }
 </script>
