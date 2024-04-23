@@ -5,6 +5,7 @@
     <Companies />
     <Services />
     <Choose />
+    <WorkWith />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import Banner from "./components/Banner.vue";
 import Companies from "./components/Companies.vue";
 import Services from "./components/Services.vue";
 import Choose from "./components/Choose.vue";
+import WorkWith from "./components/WorkWith.vue";
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     Banner,
     Companies,
     Services,
-    Choose
+    Choose,
+    WorkWith
   },
 };
 </script>
