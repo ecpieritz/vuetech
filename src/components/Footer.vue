@@ -164,13 +164,25 @@ $vt-white: #ffffff;
     display: flex;
     justify-content: space-between;
 
-    a{
+    a {
       font-size: 20px;
       color: $vt-yellow;
     }
 
-    
+    @media (max-width: 460px) {
+      flex-direction: column;
+      padding: 40px 0 20px;
+      text-align: center;
+    }
   }
   
+  @media (max-width: 460px) {
+    .col-12 {
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin-bottom: 20px !important;
+    }
+  }
 }
 </style>
