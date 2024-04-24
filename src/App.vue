@@ -6,6 +6,7 @@
     <Services />
     <Choose />
     <WorkWith />
+    <Prices />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import Companies from "./components/Companies.vue";
 import Services from "./components/Services.vue";
 import Choose from "./components/Choose.vue";
 import WorkWith from "./components/WorkWith.vue";
+import Prices from "./components/Prices.vue";
 
 export default {
   name: "App",
@@ -25,7 +27,8 @@ export default {
     Companies,
     Services,
     Choose,
-    WorkWith
+    WorkWith,
+    Prices
   },
 };
 </script>
