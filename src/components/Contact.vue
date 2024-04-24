@@ -3,12 +3,12 @@
   <section class="vt-contact">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-10 col-12">
+        <div class="col-lg-9 col-md-7  col-12">
           <h2 class="mb-4">“Stand out online and make an impact”</h2>
           <p>Lisa Souza - CEO of a Tech Startup</p>
         </div>
 
-        <div class="col-md-2 col-12">
+        <div class="col-lg-3  col-md-5 col-12">
           <a class="vt-contact__btn" href="mailto: contact@vuetech.ag" target="_blank" rel="noopener noreferrer">Contact Us</a>
         </div>
       </div>
@@ -54,6 +54,18 @@ $vt-white: #ffffff;
       background-color: $vt-yellow-dark;
     }
 
+  }
+
+  @media(max-width: 460px) {
+    padding: 80px 0;
+    .col-lg-3{
+      &.col-md-5{
+        &.col-12 {
+          text-align: center;
+          margin: 40px 0 0;
+        }
+      }
+    }
   }
 }
 </style>
