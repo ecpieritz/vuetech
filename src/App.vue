@@ -8,6 +8,7 @@
     <WorkWith />
     <Prices />
     <Contact />
+    <Footer />
   </main>
 </template>
 
@@ -20,6 +21,7 @@ import Choose from "./components/Choose.vue";
 import WorkWith from "./components/WorkWith.vue";
 import Prices from "./components/Prices.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -31,7 +33,8 @@ export default {
     Choose,
     WorkWith,
     Prices,
-    Contact
+    Contact,
+    Footer
   },
 };
 </script>
