@@ -28,7 +28,6 @@ export default {
       navItems: [
         { label: 'Services' },
         { label: 'Choose Us' },
-        { label: 'Testimonials' },
         { label: 'Prices' },
         { label: 'Contact' }
       ]
@@ -54,7 +53,7 @@ $vt-white: #ffffff;
   border-bottom: 2px solid $vt-bg-light;
 
   .navbar-brand {
-    margin-right: 10vw;
+    margin-right: 14vw;
     img{
       height: 60px;
     }
